@@ -1,5 +1,5 @@
-import { ExpandMore, Favorite, MoreVert, Share } from '@mui/icons-material'
-import { Avatar, Box, Card, CardActions, CardContent, CardHeader, CardMedia, IconButton, Typography } from '@mui/material'
+import { ExpandMore, Favorite, FavoriteBorder, MoreVert, Share } from '@mui/icons-material'
+import { Avatar, Box, Card, CardActions, CardContent, CardHeader, CardMedia, Checkbox, IconButton, Typography } from '@mui/material'
 import React from 'react'
 
 const Feed = () => {
@@ -35,7 +35,7 @@ const Feed = () => {
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
-          <Favorite />
+          <Checkbox icon={<FavoriteBorder />} checkedIcon={<Favorite sx={{color: "red"}}/>} />
         </IconButton>
         <IconButton aria-label="share">
           <Share />
