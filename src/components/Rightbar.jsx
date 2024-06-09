@@ -25,7 +25,7 @@ const Rightbar = () => {
         <Typography variant="h6" fontWeight={100} mt={2}mb={2}>Latest Photos</Typography>
         <ImageList cols={3} rowHeight={100} gap={5}>
           {Images.map( (img, key) => (
-            <ImageListItem key={key}>
+            <ImageListItem key={key} sx={{overflow:"hidden"}}>
               <img src={img} alt="post"/>
             </ImageListItem>
           ) )}
